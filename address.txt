@@ -1,0 +1,27 @@
+warning: i did this with IDA rebased so you need to use this function
+
+
+	uintptr_t rebase_addr(uintptr_t address)
+	{
+		return address - 0x400000 + reinterpret_cast<uintptr_t>(GetModuleHandleA(0));
+	}
+
+
+deserializer: 0x17224A0 __fastcall
+spawn: 0x7E8CE0 __cdecl
+
+top: 8
+base: 16
+
+R_LUA_TNIL 0
+R_LUA_TUSERDATA 7
+R_LUA_TLIGHTUSERDATA 3
+R_LUA_TNUMBER 2
+R_LUA_TBOOLEAN 1
+R_LUA_TSTRING 5
+R_LUA_TTHREAD 9
+R_LUA_TFUNCTION 8
+R_LUA_TTABLE 6
+R_LUA_TVECTOR 4
+
+i update this how i want when i want
